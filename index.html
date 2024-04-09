@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busca de Localidades</title>
+    <title>Busca de Estados e Municípios</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Buscas de Localidades Viver Tecnologia !</h1>
-    </header>
-    <main>
-        
-        <form action="#">
-            <h2>Selecione Unidade e a Cidade</h2>
-            <label for="uf">UF</label>
-            <select name="" id="uf">
-                <option></option>
-            </select>
+    <h1>Busca de Estados e Municípios - VVT !</h1>
+    <div>
+        <label for="ufInput">Digite a sigla do estado (UF):</label>
+        <input type="text" id="ufInput">
+        <button id="ufSearchButton">Buscar UF</button>
+    </div>
+    <div>
+        <label for="cityInput">Digite o nome do município:</label>
+        <input type="text" id="cityInput">
+        <button id="citySearchButton">Buscar Município</button>
+    </div>
+    <h2>Resultado:</h2>
 
-            <label for="city">Cidade</label>
-            <select name="" id="city">
-                <option></option>
-            </select>
-        </form>
-    </main>
 
-    <script src="configuracoes.js"></script>
+    
+    <div id="results"></div>
+
+   <script src="busca.js"></script>
 </body>
 </html>
